@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 @RequiredArgsConstructor
 public class UserInfoConfig implements UserDetails {
@@ -16,12 +17,7 @@ public class UserInfoConfig implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Arrays
-                .stream(userInfoEntity
-                        .getRoles()
-                        .split(","))
-                .map(SimpleGrantedAuthority::new)
-                .toList();
+        return List.of(new SimpleGrantedAuthority(userInfoEntity.getRoles().name()));
     }
 
     @Override

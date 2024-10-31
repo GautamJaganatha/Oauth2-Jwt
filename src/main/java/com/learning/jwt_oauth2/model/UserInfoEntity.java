@@ -1,19 +1,22 @@
 package com.learning.jwt_oauth2.model;
 
+import com.learning.jwt_oauth2.dto.SignUpDto;
+import com.learning.jwt_oauth2.enums.Roles;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "USER_INFO")
-public class UserInfoEntity {
+public class UserInfoEntity  {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "USER_NAME")
@@ -29,5 +32,20 @@ public class UserInfoEntity {
     private String mobileNumber;
 
     @Column(nullable = false, name = "ROLES")
-    private String roles; //ROLE_ADMIN, ROLE_MANAGER    --> [ROLE_ADMIN, ROLE_MANAGER]
+    @Enumerated(EnumType.STRING)
+    private Roles roles;
+
+
+    public SignUpDto getSignUpDto(){
+        SignUpDto sign = new SignUpDto();
+        sign.setId(id);
+        sign.setUserName(userName);
+        sign.setEmailId(emailId);
+        sign.setMobileNo(mobileNumber);
+        sign.setRoles(roles);
+
+        return sign;
+    }
+
+
 }

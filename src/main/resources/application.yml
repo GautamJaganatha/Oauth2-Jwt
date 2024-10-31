@@ -1,17 +1,21 @@
 spring:
-  h2:
-    console:
-      enabled: true
   datasource:
-    url: jdbc:h2:file:/Users/gautamjaganatha/jwtoauth
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: jdbc:mysql://localhost:3306/jwt-oauth2
+    username: root
+    password: root5687
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update                                    # controls the schema update policy
+    show-sql: false                                       # enable this to log SQL statements
+    properties:
+      hibernate:
+        format_sql: true                                  # optional, for formatted SQL logging
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+
 logging:
   level:
     org.springframework.security: trace
