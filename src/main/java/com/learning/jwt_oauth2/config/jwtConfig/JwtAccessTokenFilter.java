@@ -2,6 +2,8 @@ package com.learning.jwt_oauth2.config.jwtConfig;
 
 import com.learning.jwt_oauth2.config.RSAKeyRecord;
 import com.learning.jwt_oauth2.dto.TokenType;
+import com.learning.jwt_oauth2.model.UserInfoEntity;
+import com.learning.jwt_oauth2.repository.UserInfoRepo;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -30,6 +32,8 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
 
     private final RSAKeyRecord rsaKeyRecord;
     private final JwtTokenUtils jwtTokenUtils;
+    private final UserInfoRepo userInfoRepo;
+
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
@@ -52,8 +56,11 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
 
             final String userName = jwtTokenUtils.getUserName(jwtToken);
 
+            UserInfoEntity user = userInfoRepo.findByUserName(userName);
+
             if (!userName.isEmpty() && SecurityContextHolder.getContext().getAuthentication() == null) {
-                UserDetails userDetails = jwtTokenUtils.userDetails(userName);
+                log.info("looking for user with emailId: "+ user.getEmailId());
+                UserDetails userDetails = jwtTokenUtils.userDetails(user.getEmailId());
                 if (jwtTokenUtils.isTokenValid(jwtToken, userDetails)) {
                     SecurityContext securityContext = SecurityContextHolder.createEmptyContext();
                     UsernamePasswordAuthenticationToken createdToken = new UsernamePasswordAuthenticationToken(

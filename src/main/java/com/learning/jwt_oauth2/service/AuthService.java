@@ -32,7 +32,7 @@ public class AuthService {
             log.info("[AuthService:userSignInAuth] Access token for user:{}, has been generated",userInfoEntity.getUserName());
             return  AuthResponseDto.builder()
                     .accessToken(accessToken)
-                    .accessTokenExpiry(15 * 60)
+                    .accessTokenExpiry(String.valueOf(15 * 60))
                     .userName(userInfoEntity.getUserName())
                     .tokenType(TokenType.Bearer)
                     .build();
@@ -55,11 +55,12 @@ public class AuthService {
                     });
             String accessToken = jwtTokenGenerator.generateAccessToken2(userInfoEntity);
 
-            log.info("[AuthService:userSignInAuth] Access token for user:{}, has been generated",userInfoEntity.getUserName());
+            log.info("[AuthService:userSignInAuth] Access token for user : {}, has been generated",userInfoEntity.getUserName());
             return  AuthResponseDto.builder()
                     .accessToken(accessToken)
-                    .accessTokenExpiry(15 * 60)
+                    .accessTokenExpiry(String.valueOf(15 * 60)+" secs")
                     .userName(userInfoEntity.getUserName())
+                    .userRole(String.valueOf(userInfoEntity.getRoles()))
                     .tokenType(TokenType.Bearer)
                     .build();
 

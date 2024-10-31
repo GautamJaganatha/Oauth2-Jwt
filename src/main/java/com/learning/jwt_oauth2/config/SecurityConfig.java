@@ -3,6 +3,7 @@ package com.learning.jwt_oauth2.config;
 import com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter;
 import com.learning.jwt_oauth2.config.jwtConfig.JwtTokenUtils;
 import com.learning.jwt_oauth2.config.userConfig.UserInfoManagerConfig;
+import com.learning.jwt_oauth2.repository.UserInfoRepo;
 import com.nimbusds.jose.jwk.JWK;
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
@@ -51,6 +52,7 @@ public class SecurityConfig {
     private final UserInfoManagerConfig userInfoManagerConfig;
     private final RSAKeyRecord rsaKeyRecord;
     private final JwtTokenUtils jwtTokenUtils;
+    private final UserInfoRepo userInfoRepo;
 
 //    @Order(1)
 //    @Bean
@@ -102,7 +104,7 @@ public class SecurityConfig {
                 )
                 .userDetailsService(userInfoManagerConfig)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .addFilterBefore(new JwtAccessTokenFilter(rsaKeyRecord, jwtTokenUtils), UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(new JwtAccessTokenFilter(rsaKeyRecord, jwtTokenUtils,userInfoRepo), UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling(ex -> {
                     ex.authenticationEntryPoint((request, response, authException) -> {
                         if (request.getRequestURI().startsWith("/api")) {

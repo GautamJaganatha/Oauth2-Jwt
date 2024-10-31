@@ -16,11 +16,14 @@ public class AuthResponseDto {
     private String accessToken;
 
     @JsonProperty("access_token_expiry")
-    private int accessTokenExpiry;
+    private String accessTokenExpiry;
 
     @JsonProperty("token_type")
     private TokenType tokenType;
 
     @JsonProperty("user_name")
     private String userName;
+
+    @JsonProperty("user_role")
+    private String userRole;
 }
