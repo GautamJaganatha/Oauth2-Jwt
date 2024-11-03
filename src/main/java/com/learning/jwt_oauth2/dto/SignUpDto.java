@@ -1,7 +1,5 @@
 package com.learning.jwt_oauth2.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.learning.jwt_oauth2.enums.Roles;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

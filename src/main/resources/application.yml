@@ -16,12 +16,28 @@ spring:
 
 
 
-logging:
-  level:
-    org.springframework.security: trace
+
 
 
 
 jwt:
   rsa-private-key: classpath:certs/privateKey.pem
   rsa-public-key: classpath:certs/publicKey.pem
+
+
+
+
+logging:
+
+  file:
+    path: logs/
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:- %5p} %m%n"
+    file: "%d %-5level [%thread] %logger :%msg%n"
+  level:
+    web: error
+    root: info
+    sql: error
+    org.springframework.security: trace
+
+

@@ -11,7 +11,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -22,9 +21,9 @@ import org.springframework.security.oauth2.jwt.JwtValidationException;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -56,11 +55,22 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
 
             final String userName = jwtTokenUtils.getUserName(jwtToken);
 
-            UserInfoEntity user = userInfoRepo.findByUserName(userName);
+            log.info("Username of token is : {}", userName);
+
+//            UserInfoEntity user = userInfoRepo.findByUserName(userName);
+
+            Optional<UserInfoEntity> user = userInfoRepo.findByEmailId(userName);
+
+            if (user == null) {
+                log.warn("User not found with username: {}", userName);
+                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "User not found");
+                return;
+            }
 
             if (!userName.isEmpty() && SecurityContextHolder.getContext().getAuthentication() == null) {
-                log.info("looking for user with emailId: "+ user.getEmailId());
-                UserDetails userDetails = jwtTokenUtils.userDetails(user.getEmailId());
+                log.info("Found user with emailId: {}", user.get().getEmailId());
+                UserDetails userDetails = jwtTokenUtils.userDetails(user.get().getEmailId());
+
                 if (jwtTokenUtils.isTokenValid(jwtToken, userDetails)) {
                     SecurityContext securityContext = SecurityContextHolder.createEmptyContext();
                     UsernamePasswordAuthenticationToken createdToken = new UsernamePasswordAuthenticationToken(
@@ -79,7 +89,6 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
         } catch (JwtValidationException jwtValidationException) {
             log.error("[JwtAccessTokenFilter:doFilterInternal] JWT Validation Error: {}", jwtValidationException.getMessage());
             response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "JWT validation failed: " + jwtValidationException.getMessage());
-            return; // Prevent further processing
         }
     }
 

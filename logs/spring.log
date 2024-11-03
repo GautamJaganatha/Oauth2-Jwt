@@ -1,0 +1,493 @@
+2024-11-02 15:49:28,602 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Starting JwtOauth2Application using Java 17.0.7 with PID 78298 (/Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2/target/classes started by gautamjaganatha in /Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2)
+2024-11-02 15:49:28,603 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :No active profile set, falling back to 1 default profile: "default"
+2024-11-02 15:49:28,898 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02 15:49:28,926 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-11-02 15:49:29,178 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat initialized with port 8080 (http)
+2024-11-02 15:49:29,183 INFO  [main] org.apache.catalina.core.StandardService :Starting service [Tomcat]
+2024-11-02 15:49:29,183 INFO  [main] org.apache.catalina.core.StandardEngine :Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02 15:49:29,202 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring embedded WebApplicationContext
+2024-11-02 15:49:29,202 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :Root WebApplicationContext: initialization completed in 583 ms
+2024-11-02 15:49:29,282 INFO  [main] org.hibernate.jpa.internal.util.LogHelper :HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02 15:49:29,311 INFO  [main] org.hibernate.Version :HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-11-02 15:49:29,327 INFO  [main] org.hibernate.cache.internal.RegionFactoryInitiator :HHH000026: Second-level cache disabled
+2024-11-02 15:49:29,418 INFO  [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02 15:49:29,430 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Starting...
+2024-11-02 15:49:29,597 INFO  [main] com.zaxxer.hikari.pool.HikariPool :HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ff2266c
+2024-11-02 15:49:29,598 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Start completed.
+2024-11-02 15:49:29,627 WARN  [main] org.hibernate.orm.deprecation :HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-02 15:49:29,627 WARN  [main] org.hibernate.orm.deprecation :HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-02 15:49:29,953 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02 15:49:30,005 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 15:49:30,239 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02 15:49:30,460 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain :Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5fdff4f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@117be84a, org.springframework.security.web.context.SecurityContextHolderFilter@5e97da56, org.springframework.security.web.header.HeaderWriterFilter@cda988, org.springframework.security.web.authentication.logout.LogoutFilter@af04d6d, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@140fa482, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@5e0b7f58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cfe32cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4df8443f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78de0f6f, org.springframework.security.web.session.SessionManagementFilter@5a3d52a0, org.springframework.security.web.access.ExceptionTranslationFilter@7d31fb6c, org.springframework.security.web.access.intercept.AuthorizationFilter@52c2d1e8]
+2024-11-02 15:49:30,623 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat started on port 8080 (http) with context path ''
+2024-11-02 15:49:30,628 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Started JwtOauth2Application in 2.2 seconds (process running for 2.597)
+2024-11-02 15:51:02,695 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 15:51:02,703 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown initiated...
+2024-11-02 15:51:02,720 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown completed.
+2024-11-02 15:51:04,367 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Starting JwtOauth2Application using Java 17.0.7 with PID 78333 (/Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2/target/classes started by gautamjaganatha in /Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2)
+2024-11-02 15:51:04,368 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :No active profile set, falling back to 1 default profile: "default"
+2024-11-02 15:51:04,659 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02 15:51:04,679 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-11-02 15:51:04,926 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat initialized with port 8080 (http)
+2024-11-02 15:51:04,931 INFO  [main] org.apache.catalina.core.StandardService :Starting service [Tomcat]
+2024-11-02 15:51:04,931 INFO  [main] org.apache.catalina.core.StandardEngine :Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02 15:51:04,950 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring embedded WebApplicationContext
+2024-11-02 15:51:04,950 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :Root WebApplicationContext: initialization completed in 563 ms
+2024-11-02 15:51:05,033 INFO  [main] org.hibernate.jpa.internal.util.LogHelper :HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02 15:51:05,063 INFO  [main] org.hibernate.Version :HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-11-02 15:51:05,079 INFO  [main] org.hibernate.cache.internal.RegionFactoryInitiator :HHH000026: Second-level cache disabled
+2024-11-02 15:51:05,169 INFO  [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02 15:51:05,180 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Starting...
+2024-11-02 15:51:05,355 INFO  [main] com.zaxxer.hikari.pool.HikariPool :HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c956dda
+2024-11-02 15:51:05,355 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Start completed.
+2024-11-02 15:51:05,398 WARN  [main] org.hibernate.orm.deprecation :HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-02 15:51:05,398 WARN  [main] org.hibernate.orm.deprecation :HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-02 15:51:05,706 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02 15:51:05,767 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 15:51:05,940 TRACE [main] org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer :Eagerly initializing {securityConfig=com.learning.jwt_oauth2.config.SecurityConfig$$SpringCGLIB$$0@49482761}
+2024-11-02 15:51:05,950 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage()
+2024-11-02 15:51:05,958 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage()]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:51:05,961 TRACE [main] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Validated configuration attributes
+2024-11-02 15:51:05,964 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getFirstWelcomeMessage(org.springframework.security.core.Authentication)
+2024-11-02 15:51:05,964 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getFirstWelcomeMessage(org.springframework.security.core.Authentication)]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:51:05,964 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getManagerData(java.security.Principal)
+2024-11-02 15:51:05,964 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getManagerData(java.security.Principal)]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:51:05,964 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_WRITE\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getAdminData(java.lang.String,java.security.Principal)
+2024-11-02 15:51:05,964 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getAdminData(java.lang.String,java.security.Principal)]] with attributes [[authorize: 'hasAuthority('SCOPE_WRITE')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:51:05,978 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02 15:51:06,191 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain :Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2396dc4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb888b7, org.springframework.security.web.context.SecurityContextHolderFilter@38eafdab, org.springframework.security.web.header.HeaderWriterFilter@6e8f3b76, org.springframework.security.web.authentication.logout.LogoutFilter@4468ced2, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5825932c, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@63e81ac6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d86b636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61c42e54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@277dddcf, org.springframework.security.web.session.SessionManagementFilter@4df8443f, org.springframework.security.web.access.ExceptionTranslationFilter@18356d9e, org.springframework.security.web.access.intercept.AuthorizationFilter@5643052d]
+2024-11-02 15:51:06,361 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat started on port 8080 (http) with context path ''
+2024-11-02 15:51:06,365 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Started JwtOauth2Application in 2.203 seconds (process running for 2.598)
+2024-11-02 15:51:20,249 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-02 15:51:20,262 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@2396dc4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb888b7, org.springframework.security.web.context.SecurityContextHolderFilter@38eafdab, org.springframework.security.web.header.HeaderWriterFilter@6e8f3b76, org.springframework.security.web.authentication.logout.LogoutFilter@4468ced2, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5825932c, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@63e81ac6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d86b636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61c42e54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@277dddcf, org.springframework.security.web.session.SessionManagementFilter@4df8443f, org.springframework.security.web.access.ExceptionTranslationFilter@18356d9e, org.springframework.security.web.access.intercept.AuthorizationFilter@5643052d]] (1/1)
+2024-11-02 15:51:20,262 DEBUG [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Securing POST /sign-in
+2024-11-02 15:51:20,262 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 15:51:20,263 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 15:51:20,264 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 15:51:20,264 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 15:51:20,265 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] :: Started 
+2024-11-02 15:51:20,265 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Filtering the Http Request: /sign-in
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking BearerTokenAuthenticationFilter (7/13)
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter :Did not process request since did not find bearer token
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking RequestCacheAwareFilter (8/13)
+2024-11-02 15:51:20,265 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderAwareRequestFilter (9/13)
+2024-11-02 15:51:20,266 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking AnonymousAuthenticationFilter (10/13)
+2024-11-02 15:51:20,266 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking SessionManagementFilter (11/13)
+2024-11-02 15:51:20,266 TRACE [http-nio-8080-exec-2] org.springframework.security.web.context.SupplierDeferredSecurityContext :Created SecurityContextImpl [Null authentication]
+2024-11-02 15:51:20,266 TRACE [http-nio-8080-exec-2] org.springframework.security.web.authentication.AnonymousAuthenticationFilter :Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-11-02 15:51:20,266 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking ExceptionTranslationFilter (12/13)
+2024-11-02 15:51:20,266 TRACE [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Invoking AuthorizationFilter (13/13)
+2024-11-02 15:51:20,267 TRACE [http-nio-8080-exec-2] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Authorizing POST /sign-in
+2024-11-02 15:51:20,267 TRACE [http-nio-8080-exec-2] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Checking authorization on POST /sign-in using org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$$Lambda$1492/0x0000000801588210@53f025d0
+2024-11-02 15:51:20,267 DEBUG [http-nio-8080-exec-2] org.springframework.security.web.FilterChainProxy :Secured POST /sign-in
+2024-11-02 15:51:20,317 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.controller.AuthController :Attempting to sign in user with email: admin@admin.com
+2024-11-02 15:51:20,317 TRACE [http-nio-8080-exec-2] org.springframework.security.authentication.ProviderManager :Authenticating request with DaoAuthenticationProvider (1/1)
+2024-11-02 15:51:20,675 DEBUG [http-nio-8080-exec-2] org.springframework.security.authentication.dao.DaoAuthenticationProvider :Authenticated user
+2024-11-02 15:51:20,676 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.controller.AuthController :Authentication successful for user: admin@admin.com
+2024-11-02 15:51:20,681 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :[JwtTokenGenerator:generateAccessToken] Token Creation Started for:Admin
+2024-11-02 15:51:20,682 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :User info : UserInfoEntity(id=2, userName=Admin, emailId=Admin@Admin.com, password=$2a$10$7DzELHuVfx/0GOGhr6MM4eBesmUvFwWkblAJyDIUv8EZWQCyXF21a, mobileNumber=1234567890, roles=ADMIN)
+2024-11-02 15:51:20,682 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :Role for the user Admin@Admin.com is : ADMIN
+2024-11-02 15:51:20,683 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :Permission for the user Admin@Admin.com is : 
+2024-11-02 15:51:20,756 INFO  [http-nio-8080-exec-2] com.learning.jwt_oauth2.service.AuthService :[AuthService:userSignInAuth] Access token for user : Admin, has been generated
+2024-11-02 15:51:20,776 TRACE [http-nio-8080-exec-2] org.springframework.security.web.header.writers.HstsHeaderWriter :Not injecting HSTS header since it did not match request to [Is Secure]
+2024-11-02 15:52:11,451 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@2396dc4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb888b7, org.springframework.security.web.context.SecurityContextHolderFilter@38eafdab, org.springframework.security.web.header.HeaderWriterFilter@6e8f3b76, org.springframework.security.web.authentication.logout.LogoutFilter@4468ced2, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5825932c, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@63e81ac6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d86b636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61c42e54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@277dddcf, org.springframework.security.web.session.SessionManagementFilter@4df8443f, org.springframework.security.web.access.ExceptionTranslationFilter@18356d9e, org.springframework.security.web.access.intercept.AuthorizationFilter@5643052d]] (1/1)
+2024-11-02 15:52:11,453 DEBUG [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Securing GET /api/welcome
+2024-11-02 15:52:11,454 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 15:52:11,454 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 15:52:11,454 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 15:52:11,454 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 15:52:11,454 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 15:52:11,455 TRACE [http-nio-8080-exec-3] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 15:52:11,455 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 15:52:11,456 INFO  [http-nio-8080-exec-3] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] :: Started 
+2024-11-02 15:52:11,456 INFO  [http-nio-8080-exec-3] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Filtering the Http Request: /api/welcome
+2024-11-02 15:52:11,481 DEBUG [http-nio-8080-exec-3] org.springframework.security.oauth2.jwt.JwtTimestampValidator :Jwt expired at 2024-10-31T12:46:08Z
+2024-11-02 15:52:11,482 ERROR [http-nio-8080-exec-3] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] JWT Validation Error: An error occurred while attempting to decode the Jwt: Jwt expired at 2024-10-31T12:46:08Z
+2024-11-02 15:52:11,482 TRACE [http-nio-8080-exec-3] org.springframework.security.web.header.writers.HstsHeaderWriter :Not injecting HSTS header since it did not match request to [Is Secure]
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@2396dc4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb888b7, org.springframework.security.web.context.SecurityContextHolderFilter@38eafdab, org.springframework.security.web.header.HeaderWriterFilter@6e8f3b76, org.springframework.security.web.authentication.logout.LogoutFilter@4468ced2, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5825932c, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@63e81ac6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d86b636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61c42e54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@277dddcf, org.springframework.security.web.session.SessionManagementFilter@4df8443f, org.springframework.security.web.access.ExceptionTranslationFilter@18356d9e, org.springframework.security.web.access.intercept.AuthorizationFilter@5643052d]] (1/1)
+2024-11-02 15:52:11,491 DEBUG [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Securing GET /error
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking BearerTokenAuthenticationFilter (7/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking RequestCacheAwareFilter (8/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderAwareRequestFilter (9/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking AnonymousAuthenticationFilter (10/13)
+2024-11-02 15:52:11,491 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking SessionManagementFilter (11/13)
+2024-11-02 15:52:11,492 TRACE [http-nio-8080-exec-3] org.springframework.security.web.context.SupplierDeferredSecurityContext :Created SecurityContextImpl [Null authentication]
+2024-11-02 15:52:11,492 TRACE [http-nio-8080-exec-3] org.springframework.security.web.authentication.AnonymousAuthenticationFilter :Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-11-02 15:52:11,492 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking ExceptionTranslationFilter (12/13)
+2024-11-02 15:52:11,492 TRACE [http-nio-8080-exec-3] org.springframework.security.web.FilterChainProxy :Invoking AuthorizationFilter (13/13)
+2024-11-02 15:52:11,492 TRACE [http-nio-8080-exec-3] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Authorizing GET /error
+2024-11-02 15:52:11,493 TRACE [http-nio-8080-exec-3] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Checking authorization on GET /error using org.springframework.security.authorization.AuthenticatedAuthorizationManager@336c3184
+2024-11-02 15:52:11,495 TRACE [http-nio-8080-exec-3] org.springframework.security.web.access.ExceptionTranslationFilter :Sending AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]] to authentication entry point since access is denied
+org.springframework.security.access.AccessDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:98)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-11-02 15:59:44,010 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 15:59:44,025 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown initiated...
+2024-11-02 15:59:44,051 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown completed.
+2024-11-02 15:59:46,974 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Starting JwtOauth2Application using Java 17.0.7 with PID 78423 (/Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2/target/classes started by gautamjaganatha in /Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2)
+2024-11-02 15:59:46,975 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :No active profile set, falling back to 1 default profile: "default"
+2024-11-02 15:59:47,264 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02 15:59:47,293 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-11-02 15:59:47,524 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat initialized with port 8080 (http)
+2024-11-02 15:59:47,529 INFO  [main] org.apache.catalina.core.StandardService :Starting service [Tomcat]
+2024-11-02 15:59:47,529 INFO  [main] org.apache.catalina.core.StandardEngine :Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02 15:59:47,547 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring embedded WebApplicationContext
+2024-11-02 15:59:47,547 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :Root WebApplicationContext: initialization completed in 556 ms
+2024-11-02 15:59:47,625 INFO  [main] org.hibernate.jpa.internal.util.LogHelper :HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02 15:59:47,649 INFO  [main] org.hibernate.Version :HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-11-02 15:59:47,661 INFO  [main] org.hibernate.cache.internal.RegionFactoryInitiator :HHH000026: Second-level cache disabled
+2024-11-02 15:59:47,763 INFO  [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02 15:59:47,775 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Starting...
+2024-11-02 15:59:47,954 INFO  [main] com.zaxxer.hikari.pool.HikariPool :HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14dbfdb1
+2024-11-02 15:59:47,954 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Start completed.
+2024-11-02 15:59:47,982 WARN  [main] org.hibernate.orm.deprecation :HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-02 15:59:47,982 WARN  [main] org.hibernate.orm.deprecation :HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-02 15:59:48,291 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02 15:59:48,335 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 15:59:48,489 TRACE [main] org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer :Eagerly initializing {securityConfig=com.learning.jwt_oauth2.config.SecurityConfig$$SpringCGLIB$$0@34a99d8}
+2024-11-02 15:59:48,499 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage()
+2024-11-02 15:59:48,506 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage()]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:59:48,510 TRACE [main] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Validated configuration attributes
+2024-11-02 15:59:48,513 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getFirstWelcomeMessage(org.springframework.security.core.Authentication)
+2024-11-02 15:59:48,513 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getFirstWelcomeMessage(org.springframework.security.core.Authentication)]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:59:48,513 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getManagerData(java.security.Principal)
+2024-11-02 15:59:48,513 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getManagerData(java.security.Principal)]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:59:48,513 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_WRITE\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getAdminData(java.lang.String,java.security.Principal)
+2024-11-02 15:59:48,513 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getAdminData(java.lang.String,java.security.Principal)]] with attributes [[authorize: 'hasAuthority('SCOPE_WRITE')', filter: 'null', filterTarget: 'null']]
+2024-11-02 15:59:48,528 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02 15:59:48,725 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain :Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e5febe9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5643052d, org.springframework.security.web.context.SecurityContextHolderFilter@3f31cf8f, org.springframework.security.web.header.HeaderWriterFilter@823f978, org.springframework.security.web.authentication.logout.LogoutFilter@40304938, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5e0b7f58, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2e04c89d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3507200d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4865434e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9e4468, org.springframework.security.web.session.SessionManagementFilter@6e8f3b76, org.springframework.security.web.access.ExceptionTranslationFilter@c0a8787, org.springframework.security.web.access.intercept.AuthorizationFilter@2d6e09f0]
+2024-11-02 15:59:48,901 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat started on port 8080 (http) with context path ''
+2024-11-02 15:59:48,905 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Started JwtOauth2Application in 2.151 seconds (process running for 2.395)
+2024-11-02 15:59:58,844 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-02 15:59:58,859 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@3e5febe9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5643052d, org.springframework.security.web.context.SecurityContextHolderFilter@3f31cf8f, org.springframework.security.web.header.HeaderWriterFilter@823f978, org.springframework.security.web.authentication.logout.LogoutFilter@40304938, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5e0b7f58, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2e04c89d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3507200d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4865434e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9e4468, org.springframework.security.web.session.SessionManagementFilter@6e8f3b76, org.springframework.security.web.access.ExceptionTranslationFilter@c0a8787, org.springframework.security.web.access.intercept.AuthorizationFilter@2d6e09f0]] (1/1)
+2024-11-02 15:59:58,860 DEBUG [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Securing POST /sign-in
+2024-11-02 15:59:58,860 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 15:59:58,860 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 15:59:58,862 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 15:59:58,862 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 15:59:58,863 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 15:59:58,863 TRACE [http-nio-8080-exec-1] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 15:59:58,863 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 15:59:58,864 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] :: Started 
+2024-11-02 15:59:58,864 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Filtering the Http Request: /sign-in
+2024-11-02 15:59:58,864 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking BearerTokenAuthenticationFilter (7/13)
+2024-11-02 15:59:58,864 TRACE [http-nio-8080-exec-1] org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter :Did not process request since did not find bearer token
+2024-11-02 15:59:58,864 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking RequestCacheAwareFilter (8/13)
+2024-11-02 15:59:58,864 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderAwareRequestFilter (9/13)
+2024-11-02 15:59:58,865 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking AnonymousAuthenticationFilter (10/13)
+2024-11-02 15:59:58,865 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking SessionManagementFilter (11/13)
+2024-11-02 15:59:58,865 TRACE [http-nio-8080-exec-1] org.springframework.security.web.context.SupplierDeferredSecurityContext :Created SecurityContextImpl [Null authentication]
+2024-11-02 15:59:58,866 TRACE [http-nio-8080-exec-1] org.springframework.security.web.authentication.AnonymousAuthenticationFilter :Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-11-02 15:59:58,866 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking ExceptionTranslationFilter (12/13)
+2024-11-02 15:59:58,866 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking AuthorizationFilter (13/13)
+2024-11-02 15:59:58,866 TRACE [http-nio-8080-exec-1] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Authorizing POST /sign-in
+2024-11-02 15:59:58,867 TRACE [http-nio-8080-exec-1] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Checking authorization on POST /sign-in using org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$$Lambda$1492/0x000000080157b1b8@38f13b7a
+2024-11-02 15:59:58,867 DEBUG [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Secured POST /sign-in
+2024-11-02 15:59:58,911 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.controller.AuthController :Attempting to sign in user with email: admin@admin.com
+2024-11-02 15:59:58,911 TRACE [http-nio-8080-exec-1] org.springframework.security.authentication.ProviderManager :Authenticating request with DaoAuthenticationProvider (1/1)
+2024-11-02 15:59:59,133 DEBUG [http-nio-8080-exec-1] org.springframework.security.authentication.dao.DaoAuthenticationProvider :Authenticated user
+2024-11-02 15:59:59,134 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.controller.AuthController :Authentication successful for user: admin@admin.com
+2024-11-02 15:59:59,136 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :[JwtTokenGenerator:generateAccessToken] Token Creation Started for:Admin
+2024-11-02 15:59:59,136 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :User info : UserInfoEntity(id=2, userName=Admin, emailId=Admin@Admin.com, password=$2a$10$7DzELHuVfx/0GOGhr6MM4eBesmUvFwWkblAJyDIUv8EZWQCyXF21a, mobileNumber=1234567890, roles=ADMIN)
+2024-11-02 15:59:59,137 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :Role for the user Admin@Admin.com is : ADMIN
+2024-11-02 15:59:59,137 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :Permission for the user Admin@Admin.com is : 
+2024-11-02 15:59:59,166 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.service.AuthService :[AuthService:userSignInAuth] Access token for user : Admin, has been generated
+2024-11-02 15:59:59,179 TRACE [http-nio-8080-exec-1] org.springframework.security.web.header.writers.HstsHeaderWriter :Not injecting HSTS header since it did not match request to [Is Secure]
+2024-11-02 16:01:48,500 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@3e5febe9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5643052d, org.springframework.security.web.context.SecurityContextHolderFilter@3f31cf8f, org.springframework.security.web.header.HeaderWriterFilter@823f978, org.springframework.security.web.authentication.logout.LogoutFilter@40304938, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5e0b7f58, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2e04c89d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3507200d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4865434e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9e4468, org.springframework.security.web.session.SessionManagementFilter@6e8f3b76, org.springframework.security.web.access.ExceptionTranslationFilter@c0a8787, org.springframework.security.web.access.intercept.AuthorizationFilter@2d6e09f0]] (1/1)
+2024-11-02 16:01:48,504 DEBUG [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Securing GET /api/welcome
+2024-11-02 16:01:48,504 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 16:01:48,504 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 16:01:48,505 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 16:01:48,505 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 16:01:48,506 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 16:01:48,507 TRACE [http-nio-8080-exec-5] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 16:01:48,507 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 16:01:48,507 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] :: Started 
+2024-11-02 16:01:48,507 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Filtering the Http Request: /api/welcome
+2024-11-02 16:01:48,565 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :Username of token is : Admin@Admin.com
+2024-11-02 16:01:48,658 WARN  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :User not found with username: Admin@Admin.com
+2024-11-02 16:01:48,659 TRACE [http-nio-8080-exec-5] org.springframework.security.web.header.writers.HstsHeaderWriter :Not injecting HSTS header since it did not match request to [Is Secure]
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@3e5febe9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5643052d, org.springframework.security.web.context.SecurityContextHolderFilter@3f31cf8f, org.springframework.security.web.header.HeaderWriterFilter@823f978, org.springframework.security.web.authentication.logout.LogoutFilter@40304938, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@5e0b7f58, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2e04c89d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3507200d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4865434e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e9e4468, org.springframework.security.web.session.SessionManagementFilter@6e8f3b76, org.springframework.security.web.access.ExceptionTranslationFilter@c0a8787, org.springframework.security.web.access.intercept.AuthorizationFilter@2d6e09f0]] (1/1)
+2024-11-02 16:01:48,663 DEBUG [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Securing GET /error
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking BearerTokenAuthenticationFilter (7/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking RequestCacheAwareFilter (8/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderAwareRequestFilter (9/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking AnonymousAuthenticationFilter (10/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SessionManagementFilter (11/13)
+2024-11-02 16:01:48,663 TRACE [http-nio-8080-exec-5] org.springframework.security.web.context.SupplierDeferredSecurityContext :Created SecurityContextImpl [Null authentication]
+2024-11-02 16:01:48,664 TRACE [http-nio-8080-exec-5] org.springframework.security.web.authentication.AnonymousAuthenticationFilter :Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-11-02 16:01:48,664 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking ExceptionTranslationFilter (12/13)
+2024-11-02 16:01:48,664 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking AuthorizationFilter (13/13)
+2024-11-02 16:01:48,664 TRACE [http-nio-8080-exec-5] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Authorizing GET /error
+2024-11-02 16:01:48,664 TRACE [http-nio-8080-exec-5] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Checking authorization on GET /error using org.springframework.security.authorization.AuthenticatedAuthorizationManager@2137ac37
+2024-11-02 16:01:48,666 TRACE [http-nio-8080-exec-5] org.springframework.security.web.access.ExceptionTranslationFilter :Sending AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]] to authentication entry point since access is denied
+org.springframework.security.access.AccessDeniedException: Access Denied
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:98)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-11-02 16:06:24,113 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 16:06:24,133 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown initiated...
+2024-11-02 16:06:24,160 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown completed.
+2024-11-02 16:06:26,883 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Starting JwtOauth2Application using Java 17.0.7 with PID 78505 (/Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2/target/classes started by gautamjaganatha in /Users/gautamjaganatha/Documents/JWT-OAUTH2/jwt-oauth2)
+2024-11-02 16:06:26,885 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :No active profile set, falling back to 1 default profile: "default"
+2024-11-02 16:06:27,189 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02 16:06:27,218 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate :Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-11-02 16:06:27,459 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat initialized with port 8080 (http)
+2024-11-02 16:06:27,465 INFO  [main] org.apache.catalina.core.StandardService :Starting service [Tomcat]
+2024-11-02 16:06:27,465 INFO  [main] org.apache.catalina.core.StandardEngine :Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02 16:06:27,484 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring embedded WebApplicationContext
+2024-11-02 16:06:27,485 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext :Root WebApplicationContext: initialization completed in 576 ms
+2024-11-02 16:06:27,568 INFO  [main] org.hibernate.jpa.internal.util.LogHelper :HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02 16:06:27,593 INFO  [main] org.hibernate.Version :HHH000412: Hibernate ORM core version 6.4.10.Final
+2024-11-02 16:06:27,606 INFO  [main] org.hibernate.cache.internal.RegionFactoryInitiator :HHH000026: Second-level cache disabled
+2024-11-02 16:06:27,707 INFO  [main] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo :No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02 16:06:27,719 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Starting...
+2024-11-02 16:06:27,898 INFO  [main] com.zaxxer.hikari.pool.HikariPool :HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@986b619
+2024-11-02 16:06:27,898 INFO  [main] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Start completed.
+2024-11-02 16:06:27,947 WARN  [main] org.hibernate.orm.deprecation :HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-02 16:06:27,947 WARN  [main] org.hibernate.orm.deprecation :HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-11-02 16:06:28,250 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02 16:06:28,298 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 16:06:28,458 TRACE [main] org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer :Eagerly initializing {securityConfig=com.learning.jwt_oauth2.config.SecurityConfig$$SpringCGLIB$$0@47ab3688}
+2024-11-02 16:06:28,469 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage()
+2024-11-02 16:06:28,477 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage()]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 16:06:28,480 TRACE [main] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Validated configuration attributes
+2024-11-02 16:06:28,484 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getFirstWelcomeMessage(org.springframework.security.core.Authentication)
+2024-11-02 16:06:28,484 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getFirstWelcomeMessage(org.springframework.security.core.Authentication)]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 16:06:28,484 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_READ\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getManagerData(java.security.Principal)
+2024-11-02 16:06:28,484 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getManagerData(java.security.Principal)]] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 16:06:28,484 DEBUG [main] org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource :@org.springframework.security.access.prepost.PreAuthorize("hasAuthority(\'SCOPE_WRITE\')") found on specific method: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getAdminData(java.lang.String,java.security.Principal)
+2024-11-02 16:06:28,484 DEBUG [main] org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource :Caching method [CacheKey[com.learning.jwt_oauth2.controller.DashboardController; public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getAdminData(java.lang.String,java.security.Principal)]] with attributes [[authorize: 'hasAuthority('SCOPE_WRITE')', filter: 'null', filterTarget: 'null']]
+2024-11-02 16:06:28,498 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02 16:06:28,696 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain :Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5825932c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@277dddcf, org.springframework.security.web.context.SecurityContextHolderFilter@1d86b636, org.springframework.security.web.header.HeaderWriterFilter@5f14eb51, org.springframework.security.web.authentication.logout.LogoutFilter@4e3bc13b, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@321c01c2, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2396dc4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61e4a072, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf306d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d5eca06, org.springframework.security.web.session.SessionManagementFilter@3fe59f84, org.springframework.security.web.access.ExceptionTranslationFilter@5ab70df7, org.springframework.security.web.access.intercept.AuthorizationFilter@1e9e4468]
+2024-11-02 16:06:28,866 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer :Tomcat started on port 8080 (http) with context path ''
+2024-11-02 16:06:28,871 INFO  [main] com.learning.jwt_oauth2.JwtOauth2Application :Started JwtOauth2Application in 2.24 seconds (process running for 2.515)
+2024-11-02 16:06:35,353 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-02 16:06:35,366 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5825932c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@277dddcf, org.springframework.security.web.context.SecurityContextHolderFilter@1d86b636, org.springframework.security.web.header.HeaderWriterFilter@5f14eb51, org.springframework.security.web.authentication.logout.LogoutFilter@4e3bc13b, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@321c01c2, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2396dc4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61e4a072, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf306d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d5eca06, org.springframework.security.web.session.SessionManagementFilter@3fe59f84, org.springframework.security.web.access.ExceptionTranslationFilter@5ab70df7, org.springframework.security.web.access.intercept.AuthorizationFilter@1e9e4468]] (1/1)
+2024-11-02 16:06:35,367 DEBUG [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Securing POST /sign-in
+2024-11-02 16:06:35,367 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 16:06:35,367 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 16:06:35,368 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 16:06:35,369 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 16:06:35,369 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 16:06:35,369 TRACE [http-nio-8080-exec-1] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 16:06:35,369 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 16:06:35,370 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] :: Started 
+2024-11-02 16:06:35,370 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Filtering the Http Request: /sign-in
+2024-11-02 16:06:35,370 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking BearerTokenAuthenticationFilter (7/13)
+2024-11-02 16:06:35,370 TRACE [http-nio-8080-exec-1] org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter :Did not process request since did not find bearer token
+2024-11-02 16:06:35,370 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking RequestCacheAwareFilter (8/13)
+2024-11-02 16:06:35,370 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderAwareRequestFilter (9/13)
+2024-11-02 16:06:35,371 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking AnonymousAuthenticationFilter (10/13)
+2024-11-02 16:06:35,371 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking SessionManagementFilter (11/13)
+2024-11-02 16:06:35,371 TRACE [http-nio-8080-exec-1] org.springframework.security.web.context.SupplierDeferredSecurityContext :Created SecurityContextImpl [Null authentication]
+2024-11-02 16:06:35,371 TRACE [http-nio-8080-exec-1] org.springframework.security.web.authentication.AnonymousAuthenticationFilter :Set SecurityContextHolder to AnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2024-11-02 16:06:35,371 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking ExceptionTranslationFilter (12/13)
+2024-11-02 16:06:35,372 TRACE [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Invoking AuthorizationFilter (13/13)
+2024-11-02 16:06:35,372 TRACE [http-nio-8080-exec-1] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Authorizing POST /sign-in
+2024-11-02 16:06:35,372 TRACE [http-nio-8080-exec-1] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Checking authorization on POST /sign-in using org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$$Lambda$1492/0x000000080157a658@42aa8af6
+2024-11-02 16:06:35,372 DEBUG [http-nio-8080-exec-1] org.springframework.security.web.FilterChainProxy :Secured POST /sign-in
+2024-11-02 16:06:35,411 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.controller.AuthController :Attempting to sign in user with email: admin@admin.com
+2024-11-02 16:06:35,412 TRACE [http-nio-8080-exec-1] org.springframework.security.authentication.ProviderManager :Authenticating request with DaoAuthenticationProvider (1/1)
+2024-11-02 16:06:35,640 DEBUG [http-nio-8080-exec-1] org.springframework.security.authentication.dao.DaoAuthenticationProvider :Authenticated user
+2024-11-02 16:06:35,640 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.controller.AuthController :Authentication successful for user: admin@admin.com
+2024-11-02 16:06:35,642 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :[JwtTokenGenerator:generateAccessToken] Token Creation Started for:Admin
+2024-11-02 16:06:35,642 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :User info : UserInfoEntity(id=2, userName=Admin, emailId=Admin@Admin.com, password=$2a$10$7DzELHuVfx/0GOGhr6MM4eBesmUvFwWkblAJyDIUv8EZWQCyXF21a, mobileNumber=1234567890, roles=ADMIN)
+2024-11-02 16:06:35,643 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :Role for the user Admin@Admin.com is : ADMIN
+2024-11-02 16:06:35,643 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.config.jwtConfig.JwtTokenGenerator :Permission for the user Admin@Admin.com is : 
+2024-11-02 16:06:35,672 INFO  [http-nio-8080-exec-1] com.learning.jwt_oauth2.service.AuthService :[AuthService:userSignInAuth] Access token for user : Admin at time 2024-11-02T20:06:35.672717Z, has been generated
+2024-11-02 16:06:35,684 TRACE [http-nio-8080-exec-1] org.springframework.security.web.header.writers.HstsHeaderWriter :Not injecting HSTS header since it did not match request to [Is Secure]
+2024-11-02 16:07:36,034 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5825932c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@277dddcf, org.springframework.security.web.context.SecurityContextHolderFilter@1d86b636, org.springframework.security.web.header.HeaderWriterFilter@5f14eb51, org.springframework.security.web.authentication.logout.LogoutFilter@4e3bc13b, com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter@321c01c2, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2396dc4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61e4a072, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bf306d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d5eca06, org.springframework.security.web.session.SessionManagementFilter@3fe59f84, org.springframework.security.web.access.ExceptionTranslationFilter@5ab70df7, org.springframework.security.web.access.intercept.AuthorizationFilter@1e9e4468]] (1/1)
+2024-11-02 16:07:36,035 DEBUG [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Securing GET /api/welcome
+2024-11-02 16:07:36,035 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking DisableEncodeUrlFilter (1/13)
+2024-11-02 16:07:36,036 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-11-02 16:07:36,036 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderFilter (3/13)
+2024-11-02 16:07:36,036 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking HeaderWriterFilter (4/13)
+2024-11-02 16:07:36,036 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking LogoutFilter (5/13)
+2024-11-02 16:07:36,037 TRACE [http-nio-8080-exec-5] org.springframework.security.web.authentication.logout.LogoutFilter :Did not match request to Or [Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]
+2024-11-02 16:07:36,037 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking JwtAccessTokenFilter (6/13)
+2024-11-02 16:07:36,037 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] :: Started 
+2024-11-02 16:07:36,037 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Filtering the Http Request: /api/welcome
+2024-11-02 16:07:36,057 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :Username of token is : Admin@Admin.com
+2024-11-02 16:07:36,090 TRACE [http-nio-8080-exec-5] org.springframework.security.web.context.SupplierDeferredSecurityContext :Created SecurityContextImpl [Null authentication]
+2024-11-02 16:07:36,090 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :Found user with emailId: Admin@Admin.com
+2024-11-02 16:07:36,093 INFO  [http-nio-8080-exec-5] com.learning.jwt_oauth2.config.jwtConfig.JwtAccessTokenFilter :[JwtAccessTokenFilter:doFilterInternal] Completed
+2024-11-02 16:07:36,093 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking BearerTokenAuthenticationFilter (7/13)
+2024-11-02 16:07:36,093 TRACE [http-nio-8080-exec-5] org.springframework.security.authentication.ProviderManager :Authenticating request with JwtAuthenticationProvider (1/3)
+2024-11-02 16:07:36,094 TRACE [http-nio-8080-exec-5] org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter :Looking for scopes in claim scope
+2024-11-02 16:07:36,095 DEBUG [http-nio-8080-exec-5] org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider :Authenticated token
+2024-11-02 16:07:36,095 DEBUG [http-nio-8080-exec-5] org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter :Set SecurityContextHolder to JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@9116a0ea, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_READ, SCOPE_DELETE, SCOPE_WRITE]]
+2024-11-02 16:07:36,095 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking RequestCacheAwareFilter (8/13)
+2024-11-02 16:07:36,095 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SecurityContextHolderAwareRequestFilter (9/13)
+2024-11-02 16:07:36,095 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking AnonymousAuthenticationFilter (10/13)
+2024-11-02 16:07:36,095 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking SessionManagementFilter (11/13)
+2024-11-02 16:07:36,095 TRACE [http-nio-8080-exec-5] org.springframework.security.web.authentication.AnonymousAuthenticationFilter :Did not set SecurityContextHolder since already authenticated JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@9116a0ea, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_READ, SCOPE_DELETE, SCOPE_WRITE]]
+2024-11-02 16:07:36,096 TRACE [http-nio-8080-exec-5] org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy :Preparing session with ChangeSessionIdAuthenticationStrategy (1/1)
+2024-11-02 16:07:36,096 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking ExceptionTranslationFilter (12/13)
+2024-11-02 16:07:36,096 TRACE [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Invoking AuthorizationFilter (13/13)
+2024-11-02 16:07:36,096 TRACE [http-nio-8080-exec-5] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Authorizing GET /api/welcome
+2024-11-02 16:07:36,096 TRACE [http-nio-8080-exec-5] org.springframework.security.web.access.intercept.RequestMatcherDelegatingAuthorizationManager :Checking authorization on GET /api/welcome using org.springframework.security.authorization.AuthenticatedAuthorizationManager@2b03cd45
+2024-11-02 16:07:36,096 DEBUG [http-nio-8080-exec-5] org.springframework.security.web.FilterChainProxy :Secured GET /api/welcome
+2024-11-02 16:07:36,098 DEBUG [http-nio-8080-exec-5] org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor :Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage(); target is of class [com.learning.jwt_oauth2.controller.DashboardController]
+2024-11-02 16:07:36,106 DEBUG [http-nio-8080-exec-5] org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor :Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage(); target is of class [com.learning.jwt_oauth2.controller.DashboardController]
+2024-11-02 16:07:36,106 TRACE [http-nio-8080-exec-5] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Did not re-authenticate JwtAuthenticationToken [Principal=org.springframework.security.oauth2.jwt.Jwt@9116a0ea, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[SCOPE_READ, SCOPE_DELETE, SCOPE_WRITE]] before authorizing
+2024-11-02 16:07:36,106 TRACE [http-nio-8080-exec-5] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Authorizing ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage(); target is of class [com.learning.jwt_oauth2.controller.DashboardController] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 16:07:36,107 DEBUG [http-nio-8080-exec-5] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.learning.jwt_oauth2.controller.DashboardController.getMessage(); target is of class [com.learning.jwt_oauth2.controller.DashboardController] with attributes [[authorize: 'hasAuthority('SCOPE_READ')', filter: 'null', filterTarget: 'null']]
+2024-11-02 16:07:36,107 TRACE [http-nio-8080-exec-5] org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor :Did not switch RunAs authentication since RunAsManager returned null
+2024-11-02 16:07:36,108 TRACE [http-nio-8080-exec-5] org.springframework.security.web.header.writers.HstsHeaderWriter :Not injecting HSTS header since it did not match request to [Is Secure]
+2024-11-02 16:16:49,301 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02 16:16:49,421 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown initiated...
+2024-11-02 16:16:49,447 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource :HikariPool-1 - Shutdown completed.

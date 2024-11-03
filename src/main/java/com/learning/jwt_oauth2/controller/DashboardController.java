@@ -41,6 +41,7 @@ public class DashboardController {
                 "has this message:"+message);
     }
 
+
     @PreAuthorize("hasAuthority('SCOPE_READ')")
     @GetMapping("/welcome")
     public ResponseEntity<String> getMessage(){
