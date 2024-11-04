@@ -21,5 +21,4 @@ public class UserInfoManagerConfig implements UserDetailsService {
                 .orElseThrow(()-> new UsernameNotFoundException("User with emailId: "+emailId+" not found"));
     }
 
-
 }

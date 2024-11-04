@@ -1,7 +1,7 @@
 package com.learning.jwt_oauth2.config.jwtConfig;
 
 import com.learning.jwt_oauth2.config.RSAKeyRecord;
-import com.learning.jwt_oauth2.dto.TokenType;
+import com.learning.jwt_oauth2.enums.Roles;
 import com.learning.jwt_oauth2.model.UserInfoEntity;
 import com.learning.jwt_oauth2.repository.UserInfoRepo;
 import jakarta.servlet.FilterChain;
@@ -12,6 +12,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -23,7 +24,12 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
 
 @RequiredArgsConstructor
 @Slf4j
@@ -44,7 +50,7 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
 
             final String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
 
-            if (authHeader == null || !authHeader.startsWith(TokenType.Bearer.name())) {
+            if (authHeader == null || !authHeader.startsWith(Roles.TokenType.Bearer.name())) {
                 filterChain.doFilter(request, response);
                 return;
             }
@@ -52,6 +58,8 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
             final String token = authHeader.substring(7);
             JwtDecoder jwtDecoder = NimbusJwtDecoder.withPublicKey(rsaKeyRecord.rsaPublicKey()).build();
             final Jwt jwtToken = jwtDecoder.decode(token);
+
+            log.info("Decoded JWT Claims: {}", jwtToken.getClaims());
 
             final String userName = jwtTokenUtils.getUserName(jwtToken);
 
@@ -61,7 +69,7 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
 
             Optional<UserInfoEntity> user = userInfoRepo.findByEmailId(userName);
 
-            if (user == null) {
+            if (user.isEmpty()) {
                 log.warn("User not found with username: {}", userName);
                 response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "User not found");
                 return;
@@ -71,12 +79,20 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter {
                 log.info("Found user with emailId: {}", user.get().getEmailId());
                 UserDetails userDetails = jwtTokenUtils.userDetails(user.get().getEmailId());
 
+
+                // Extract roles from the token claims
+                List<String> roles = jwtToken.getClaimAsStringList("roles");
+                Collection<GrantedAuthority> authorities = roles.stream()
+                        .map(role -> new SimpleGrantedAuthority(role)) // Use roles directly
+                        .collect(Collectors.toList());
+
+
                 if (jwtTokenUtils.isTokenValid(jwtToken, userDetails)) {
                     SecurityContext securityContext = SecurityContextHolder.createEmptyContext();
                     UsernamePasswordAuthenticationToken createdToken = new UsernamePasswordAuthenticationToken(
                             userDetails,
                             null,
-                            userDetails.getAuthorities()
+                            authorities
                     );
                     createdToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                     securityContext.setAuthentication(createdToken);

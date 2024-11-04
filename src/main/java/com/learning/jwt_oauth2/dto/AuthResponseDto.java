@@ -1,6 +1,7 @@
 package com.learning.jwt_oauth2.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.learning.jwt_oauth2.enums.Roles;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,7 +20,7 @@ public class AuthResponseDto {
     private String accessTokenExpiry;
 
     @JsonProperty("token_type")
-    private TokenType tokenType;
+    private Roles.TokenType tokenType;
 
     @JsonProperty("user_name")
     private String userName;

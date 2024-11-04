@@ -109,6 +109,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/sign-in/**", "/api/signUp")
                         .permitAll()
+                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/api/candidate/**").hasAnyRole("ADMIN","CANDIDATE")
                         .anyRequest().authenticated()
                 )
                 .userDetailsService(userInfoManagerConfig)
@@ -130,6 +132,23 @@ public class SecurityConfig {
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults()))
                 .build();
     }
+
+
+    @Bean
+    public JwtAuthenticationConverter jwtAuthenticationConverter() {
+        JwtGrantedAuthoritiesConverter grantedAuthoritiesConverter = new JwtGrantedAuthoritiesConverter();
+        grantedAuthoritiesConverter.setAuthorityPrefix("");  // Set the authority prefix for roles
+        grantedAuthoritiesConverter.setAuthoritiesClaimName("roles");  // Map the 'roles' claim in JWT
+
+        JwtAuthenticationConverter jwtAuthenticationConverter = new JwtAuthenticationConverter();
+        jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(grantedAuthoritiesConverter);
+        return jwtAuthenticationConverter;
+    }
+
+
+
+
+
 
     @Bean
     PasswordEncoder passwordEncoder(){

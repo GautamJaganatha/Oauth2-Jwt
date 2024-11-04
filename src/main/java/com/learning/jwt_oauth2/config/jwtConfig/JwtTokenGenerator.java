@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,10 +24,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class JwtTokenGenerator {
 
-
     private final JwtEncoder jwtEncoder;
-
-
 
     public String generateAccessToken2(UserInfoEntity userInfoEntity) {
 
@@ -39,17 +37,22 @@ public class JwtTokenGenerator {
 
         log.info("Role for the user {}", userInfoConfig.getUsername()+" is : "+roles);
 
+//        String permissions = getPermissionsFromRoles(roles);
 
-        String permissions = getPermissionsFromRoles(roles);
+//        log.info("Permission for the user {} is: {}", userInfoConfig.getUsername(), permissions);
 
-        log.info("Permission for the user {}",userInfoConfig.getUsername()+" is : ",permissions);
+        // Set roles in the claims prefixed with "ROLE_"
+        List<String> rolesList = Arrays.stream(roles.split(" "))
+                .map(role -> "ROLE_" + role) // Prefix roles with "ROLE_"
+                .collect(Collectors.toList());
+        log.info("Role for the user {}", userInfoConfig.getUsername()+" is : "+rolesList);
 
         JwtClaimsSet claims = JwtClaimsSet.builder()
                 .issuer("gautam")
                 .issuedAt(Instant.now())
                 .expiresAt(Instant.now().plus(60 , ChronoUnit.HOURS))
                 .subject(userInfoEntity.getEmailId())
-                .claim("scope", permissions)
+                .claim("roles", rolesList)
                 .build();
 
         return jwtEncoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
@@ -62,49 +65,51 @@ public class JwtTokenGenerator {
                 .collect(Collectors.joining(" "));
     }
 
-    private String getPermissionsFromRoles(String roles) {
-        Set<String> permissions = new HashSet<>();
 
-        if (roles.contains("ADMIN")) {
-            permissions.addAll(List.of("READ", "WRITE", "DELETE"));
-        }
-        if (roles.contains("CANDIDATE")) {
-            permissions.add("READ");
-        }
-        if (roles.contains("MARKETING_MEMBER")) {
-            permissions.add("READ");
-        }
-
-        return String.join(" ", permissions);
-    }
+    // Below Method Is Not Required Currently
+//    private String getPermissionsFromRoles(String roles) {
+//        Set<String> permissions = new HashSet<>();
+//
+//        if (roles.contains("ADMIN")) {
+//            permissions.addAll(List.of("READ", "WRITE", "DELETE"));
+//        }
+//        if (roles.contains("CANDIDATE")) {
+//            permissions.add("READ");
+//        }
+//        if (roles.contains("MARKETING_MEMBER")) {
+//            permissions.add("READ");
+//        }
+//
+//        return String.join(" ", permissions);
+//    }
 
 
 
 // Below both methods are for checking and verifying purpose
-    public String generateAccessToken(Authentication authentication) {
-
-        log.info("[JwtTokenGenerator:generateAccessToken] Token Creation Started for:{}", authentication.getName());
-
-        String roles = getRolesOfUser(authentication);
-
-        String permissions = getPermissionsFromRoles(roles);
-
-        JwtClaimsSet claims = JwtClaimsSet.builder()
-                .issuer("gautam")
-                .issuedAt(Instant.now())
-                .expiresAt(Instant.now().plus(15 , ChronoUnit.MINUTES))
-                .subject(authentication.getName())
-                .claim("scope", permissions)
-                .build();
-
-        return jwtEncoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
-    }
-
-    private static String getRolesOfUser(Authentication authentication) {
-        return authentication.getAuthorities().stream()
-                .map(GrantedAuthority::getAuthority)
-                .collect(Collectors.joining(" "));
-    }
+//    public String generateAccessToken(Authentication authentication) {
+//
+//        log.info("[JwtTokenGenerator:generateAccessToken] Token Creation Started for:{}", authentication.getName());
+//
+//        String roles = getRolesOfUser(authentication);
+//
+//        String permissions = getPermissionsFromRoles(roles);
+//
+//        JwtClaimsSet claims = JwtClaimsSet.builder()
+//                .issuer("gautam")
+//                .issuedAt(Instant.now())
+//                .expiresAt(Instant.now().plus(15 , ChronoUnit.MINUTES))
+//                .subject(authentication.getName())
+//                .claim("scope", permissions)
+//                .build();
+//
+//        return jwtEncoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
+//    }
+//
+//    private static String getRolesOfUser(Authentication authentication) {
+//        return authentication.getAuthorities().stream()
+//                .map(GrantedAuthority::getAuthority)
+//                .collect(Collectors.joining(" "));
+//    }
 
 }
 
